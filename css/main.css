@@ -1,0 +1,993 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* COLORS =============================================
+Dark Grey: #222222;
+Brown: #595044;
+Light Grey: #999894;
+Medium Grey: #686865;
+Copper:#B87333;
+Caramel: #ce9d56;
+Light grey:
+
+============================================= */
+body, html{
+    font-family: 'Jaldi', serif;
+    font-size: 16px;
+    background-color: #eee;  
+}
+a {
+    font-family: 'Jaldi', serif;
+	color: white;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+h1{
+    font-size: 2em;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Dosis', serif;
+}
+h2{
+    font-size: 1.4em;
+    font-family: 'Dosis', serif;
+}
+img { 
+	width:100%;
+	height:auto;
+}
+#menu, #fundraiser, #contact, #about {
+    height: 600px;
+}
+
+/* Header ========================== */
+
+.logo {
+    width: 100%;
+    margin: 0 auto;
+}
+.logo img{
+    max-width: 200px;
+    min-width: 100px;
+    width: 60%; 
+    margin: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+nav {
+    width: 100%;
+    background: #000000;
+    opacity: 0.7;
+}
+nav ul {
+    list-style: none;
+    padding: 0; 
+}
+nav ul li{
+    border-bottom: 1px solid #B87333;
+    text-align: center;
+    padding: 15px 0;
+}
+nav ul li a{
+    font-family: 'Dosis', serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: white; 
+    opacity: 1;
+}
+nav ul li a:hover{
+    background: #222222;
+    border: #B87333 solid 1px;
+    border-radius: 15px; 
+    padding: 0px 15px;
+    text-align: center;
+    opacity: 0.9;
+}
+header {
+	background: url('../img/background.png');
+    background-size: cover;
+	background-position: center;
+    height: 500px;
+}
+h2, h3  {
+     visibility: hidden;
+}
+
+
+/* Main Content ========================== */
+main{
+	width:100%;
+    margin: auto; 
+}
+
+.cover{
+    text-align: center;
+    background: #222;
+    height: 500px;
+    padding-top: 50px;
+}
+.cover .fourth-width{
+    background-color: #222;
+    opacity: 0.;
+    display: inline-block;
+    font-size: 8em;
+    border: #B87333 solid 4px;
+    border-radius: 15px;
+    margin: 5px;
+}
+.cover .fourth-width a:hover{
+    background-color: #222;
+    color: #ce9d56;
+}
+
+/* Our Menu ================ */
+#menu-description .full-width{
+    height: 1400px;
+    width: 100%;
+    margin-top: -50px;
+    background: #595044;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+#menu-description .fourth-width{
+    margin-bottom: auto;
+    width: 100%;
+    font-size: 1.2em;
+}
+#menu-description ul, li{
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+}
+.intro .full-width{
+    visibility: hidden;
+    height: 200px;
+}
+.intro span{
+    visibility: hiden;
+    color: #222;
+}
+#menu-description .fourth-width span{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: #ce9d56 solid 4px;
+    color: white;
+    font-family: 'Dosis', serif;
+}
+#catering{
+    text-align: center;
+    background: #595044;
+    font-size: 1.2em;
+    color:white;
+    height: 200px;
+}
+#catering span{
+    text-transform: uppercase;
+    border-bottom: #ce9d56 solid 4px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Dosis', serif;
+    text-align: center;
+}
+
+/* Contact =========================== */     
+
+header .call-us{
+    visibility: visible;
+    float: left;
+    padding: 20px 20px;
+    width: 100 %;
+    color: #222;
+    font-size: 1em;
+    max-width: auto;
+    font-family: 'Jaldi', serif;
+    background-color: #eee;
+}
+#contact-info{
+    background-color: #595044 ;
+    font-family: 'Jaldi', serif;
+	color: #222;
+    padding: 40px;
+    padding-top: 300px;
+	text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+#contact-info span {
+    border: white solid 4px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Dosis', serif;
+    background-color: #ce9d56;
+    color: red;
+    border-radius: 0.5em;
+    letter-spacing: 0.1em
+}
+#contact-info a:hover {
+    text-decoration: none;
+    font-size: 1em;
+    color: red;
+} 
+#contact-img{
+    border: white solid 10px;
+}
+
+/* About===================== */
+#about .full-width {
+	padding-top: 60px;
+    width: 100%;
+}
+#about-img {
+    width:100%;
+    max-width: 300px;
+    max-height: 500px;
+	border: 12px solid #ffffff;
+}
+#about .half-width p{
+	text-align: center;
+    font-size: 1.2em;
+    padding: 0 20px;
+    font-family: 'Jaldi', serif;
+    background: #ce9d56;
+}
+#about .half-width span{
+    font-family: 'Dosis', serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Fundraiser ========================== */
+
+#fundraising{
+    background: #222; 
+    color: white;
+}
+#fundraising .half-width{
+    padding: 20px 40px;
+}
+#fundraising a {
+    color: white;
+}
+#fundraising a:hover {
+    color: red;
+}
+#fundraising span{
+   visibility: hidden;
+
+}
+
+/* Footer ========================== */
+footer {
+    float: left;
+	width: 100%;
+	margin: auto; 
+    background: #222222;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+footer a {
+    display: inline;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+}
+footer li{
+    display: inline;
+    list-style: none;
+    font-size: 3em;
+    color: white;
+    padding-left: 15px;
+}
+footer li a:hover{
+    color: #ce9d56;
+}
+
+footer ul{
+    text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width:768px) {
+ /*Tablet styles here!*/
+    /* Header =========================== */
+    
+header{
+    height: 700px;
+    background: url('../img/bullseye-kettle-corn-background.jpg');
+    background-size: cover;
+    background-position: top;
+    min-width: 768px;
+}
+.logo {
+    width: 30%;
+    float: left;
+}
+nav {
+    width: 70%;
+    float: right;
+    background: transparent;
+    opacity: inherit;
+}  
+nav ul li {
+    display: inline;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    padding: 5px;  
+}
+nav ul li a{
+    color: white; 
+    opacity: none;
+} 
+nav ul li a:hover{
+    background: #222222;
+    border: white solid 0.5px;
+    border-radius: 5px;    
+    padding: 0px 15px;
+    text-align: center;
+    opacity: 0.7;
+}
+header h2, h3 {
+    visibility: visible;
+    width: 35%;
+    clear: both;
+    line-height: 2em;
+    font-size: 3em; 
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    padding: 20px, 0;
+    margin-left: 20px;
+    font-family: 'Dosis', serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px 0 black, 0 4px black,
+      1px 0 black, 0 -1px black;
+} 
+header h3:hover {
+        color: #B87333;
+    }
+header h2:hover{
+    color: #ce9d56;
+    }
+header h2 {
+    padding-top: 10px;
+}
+header h3 {
+    font-size: 2em; 
+    letter-spacing: 0.1em;  
+}
+    
+/* Main =========================== */
+header .call-us{
+    margin-left: 50px;
+    margin-right: 600px;
+    visibility: visible;
+    width: 36%;
+    color: white;
+    font-size: 1.2em;
+    background: #222;
+    opacity: 0.7;
+}
+    
+.cover .fourth-width{
+    font-size: 10em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Our Menu ================== */
+.intro .full-width{
+    visibility: visible;
+    height: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+.intro .third-width {
+    width: 30%;
+    display: inline-flex;
+    font-size: 1.2em;
+    margin-left: 20px;
+    text-align: left;
+}
+.intro span{
+    font-size: 12em;
+    color: darkgoldenrod;
+    margin-left: -40px;
+    opacity: 0.4;
+    position: absolute;
+    margin-top: 10px;
+}
+#menu-description .full-width{
+    width: 100%;
+    background-color: #595044;
+    height: 550px;
+    }
+#menu-description .fourth-width{
+    padding: 10px;
+    margin-left: 10px;
+    display: block;
+    float:left;
+    width: 20%;
+    font-size: 0.8em;
+    max-width: 180px; 
+}
+#menu-description ul li{
+    display: block;
+    text-decoration: none;
+    list-style: none; 
+    text-align: left;
+}  
+#menu-description .fourth-width span{
+    font-size: 1.5em;
+}
+#menu-description li{
+    color: white;
+    font-size: 1.5em;
+}   
+#catering{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
+#catering span{
+    text-transform: uppercase;
+    border-bottom: #ce9d56 solid 6px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Dosis', serif;
+    text-align: center;
+}
+    
+/*About =========================*/
+#about-img {
+    width: 45%;
+    max-width: 400px;
+    max-height: 700px;
+	border: white solid 12px;
+    float: left;
+    }
+#about .half-width p{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 40%;
+    display: inline;
+    float: right;
+    padding-right: 60px;
+    margin-top: inherit;
+    color: #222;
+}
+    
+/* Fundraising ================= */
+#fundraising{
+    background: #eee;
+    font-size: 1.2em;
+    width: 100%;
+    }
+#fundraising .half-width{
+    display: inline-flex;
+    padding: 40px;
+    width: 35%;
+    color: #222;
+}
+#fundraising span{
+    visibility: visible;
+    font-size: 10em;
+    color: darkgoldenrod;
+    margin-left: 40px;
+    margin-top: -300px;
+    opacity: 0.4;
+    position: absolute;
+    margin-top: -50px;  
+}
+#fundraising a{
+        color: #222;
+    
+    } 
+    
+    
+    
+    
+/* Contact =========================== */     
+
+header .call-us{
+    visibility: visible;
+    margin-top: 10px;
+    margin-right: 600px;
+    padding: 20px;
+    width: 35%;
+    color: white;
+    font-size: 1.2em;
+    background: #222;
+    opacity: 0.7;
+}
+#contact-info  p {
+	background-color: #eee;
+    font-family:'Jaldi', serif;
+    font-size: 1em;
+    color: #222;
+}      
+#contact-info{
+    background-color: #eee;
+    font-family: 'Jaldi', serif;
+	color: #222;
+    font-size: 1.5em;
+    padding: 40px;
+	text-align: center;
+    font-size: 2em;
+}
+#contact-info span {
+    color: #ce9d56;
+}
+#contact-info a {
+    color: #222;
+} 
+#contact-img {
+    width: 45%;
+    max-width: 400px;
+    max-height: 500px;
+	border: white solid 10px;
+    float: left;
+} 
+    
+    
+/* Footer =========================== */
+ 
+@media (min-width:940px) {
+ /*Desktop styles here!*/
+    /* Header =========================== */
+      
+header{
+    background: url('../img/bullseye-kettle-corn-background.jpg');
+    background-size: cover;
+    background-position: top;
+    max-width: none;
+    min-width: 940px;
+    height: 800px;
+    } 
+.logo {
+    width: 30%;
+}
+.logo img{
+    margin: 10px;
+    padding: inherit;
+    width: 30%;
+}  
+nav ul li{
+    border-bottom: none;
+    text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+} 
+nav {
+    width: 70%;
+    background: transparent;
+    opacity: inherit;
+}    
+nav ul li a{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white; 
+    opacity: none;
+}
+nav ul li a:hover{
+    background: #222222;
+    border: white solid 0.5px;
+    border-radius: 5px;    
+    padding: 0px 15px;
+    text-align: center;
+    opacity: 0.7;
+}  
+header h2, h3 {
+    visibility: visible;
+    width: 40%;
+    clear: both;
+    font-size: 4em;
+    font-family: 'Dosis', serif;
+    line-height: 90px;
+    letter-spacing: 0.3em;
+    color: #ffffff;
+    padding: 20px, 0;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px 0 black, 0 4px black,
+      1px 0 black, 0 -1px black;
+}  
+header h2 {
+    padding-top: 100px;
+}   
+header h3 {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;   
+}
+    
+/* Main =========================== */
+.cover .fourth-width{
+    font-size: 10em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+    
+ /* Menu =========================== */   
+.intro .full-width{
+    height: 350px;
+}
+.intro .third-width {
+    width: 27%;
+    display: inline-flex;
+    font-size: 1.2em;
+    margin-left: 50px;
+    text-align: left;
+    color: #222;
+}
+.intro span{
+    font-size: 12em;
+    color: darkgoldenrod;
+    margin-left: -40px;
+    margin-top: -70px;
+    opacity: 0.3;
+    position: absolute;
+    }
+#menu-description{ 
+    height: 650px;
+    background: #595044;
+    padding-left: 60px;
+}
+#menu-description .fourth-width{	
+    display: block;
+    float: left;
+    margin-bottom: auto;
+    width: 20%;
+    font-size: 1em;
+    max-width: none;
+}
+#menu-description li {
+    font-size: 1.5em;  
+    line-height: 1.5em;
+    color: white;
+}
+#catering{
+    padding: 40px;
+    font-size: 1.5em;
+    color: white;
+}
+      
+/* Contact ================= */
+header .call-us{
+    visibility: visible;
+    float: left;
+    margin-top: 100px;
+    margin-right: 600px;
+    padding: 20px;
+    width: 35%;
+    color:white;
+    font-size: 1.5em;
+    background: #222;
+    opacity: 0.7;
+}
+
+/* About =========================== */
+#about .full-width {
+	padding-top: 60px;
+}   
+#about-img {
+    margin-left: 80px;
+    width: 35%;
+    max-width: 600px;
+    max-height: 800px;
+	border: white solid 12px;
+    float: left;
+    }
+#about .half-width p{
+    width: 40%;
+    display: inline;
+    float: right;
+    margin-right: 100px;
+    font-size: 1.3em;
+    padding-right: 10px;
+    font-family: 'Jaldi', serif;
+    margin-top: inherit;
+}
+#about .half-width span{
+    font-family: 'Dosis', serif;
+    text-transform: uppercase;
+    color: white; 
+    font-size: 1.5em;
+}
+
+    
+/* Contact =========================== */     
+#contact-info {
+     height: 500px;
+    }
+    
+#contact-info p {
+    margin: inherit;
+    font-family:'Jaldi', serif;
+    font-size: 1em;
+    height: 400px;
+}
+#contact-img {
+    width: 45%;
+    max-width: 500px;
+    max-height: 500px;
+	border: white solid 10px;
+    float: left;
+}
+/* Fundraiser ==============*/
+#fundraising{
+    font-size:1.5em;
+    padding-left: 40px;
+    } 
+#fundraising span{
+    visibility: visible;
+    margin-left: 40px;
+    margin-top: -300px;
+    position: absolute;
+    margin-top: -50px;  
+}  
+    
+    
+
+     
+/* Footer =========================== */
+     
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
